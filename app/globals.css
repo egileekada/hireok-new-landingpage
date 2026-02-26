@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@plugin './hero.ts';
+/* Note: You may need to change the path to fit your project structure */
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: #ffffff;
@@ -8,19 +12,90 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter); 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #37137F;
+    --foreground: #F0F2FF;
+    --secondary: #424242
+    --font-sans: var(--font-inter); 
   }
+} 
+
+@font-face {
+  font-family: 'Axiforma-Thin';
+  src: url("/font/Axiforma_Thin.ttf");
+} 
+
+@font-face {
+  font-family: 'Axiforma-Light';
+  src: url("/font/Axiforma_Light.ttf");
 }
+
+@font-face {
+  font-family: 'Axiforma-Medium';
+  src: url("/font/Axiforma_Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Regular';
+  src: url("/font/Axiforma_Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Black';
+  src: url("/font/Axiforma_Black.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Heavy';
+  src: url("/font/Axiforma_Heavy.ttf");
+} 
+
+.axiforma-thin {
+  font-family: "Axiforma-Thin"; 
+  font-weight: 700; 
+}
+
+.axiforma-regular {
+  font-family: "Axiforma-Regular";
+  font-weight: 400; 
+}
+
+.axiforma-medium {
+  font-family: "Axiforma-Medium";
+  font-weight: 500; 
+}
+
+.axiforma-light {
+  font-family: "Axiforma-Light";
+  font-weight: 300; 
+}
+
+.axiforma-black {
+  font-family: "Axiforma-Black";
+  font-weight: 700; 
+}
+
+.axiforma-heavy {
+  font-family: "Axiforma-Heavy";
+  font-weight: 800; 
+}
+
+/* body { 
+  background-color: #37137F !important;
+  overflow-x: hidden !important;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+} */
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--foreground); */
+  font-family: var(--font-sans) !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth; 
 }
+

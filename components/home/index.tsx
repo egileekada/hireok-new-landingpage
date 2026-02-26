@@ -1,0 +1,10 @@
+
+export { default as HeroSection } from "./heroSection"
+export { default as Organisers } from "./organisers"
+export { default as Features } from "./features"
+export { default as Plaformticket } from "./plaformticket"
+export { default as Coreidea } from "./coreidea"
+export { default as Whoitsfor } from "./whoitsfor"
+export { default as Marketingsupport } from "./marketingsupport"
+export { default as Clearpricing } from "./clearpricing"
+export { default as BetterEvent } from "./betterEvent"
