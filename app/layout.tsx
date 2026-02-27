@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={inter.className}>
-            <body className="antialiased w-screen ">
+            <body className="antialiased w-screen overflow-x-hidden ">
                 <Provider>
                     <div className=" fixed top-3 inset-x-3 lg:inset-x-4 z-100 ">
                         <Navbar />
