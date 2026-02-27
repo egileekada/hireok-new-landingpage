@@ -5,6 +5,24 @@ import { UnderLineIcon } from "../svg";
 import { useEffect, useState } from "react";
 import { CustomButton } from "../custom";
 
+const containerVariants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+
+const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: "easeOut" },
+    },
+};
+
 export default function HeroSection() {
     const [isShown, setIsShown] = useState(0);
 
@@ -47,7 +65,7 @@ export default function HeroSection() {
 
             {/* Content */}
             <div className="relative  w-screen lg:h-screen h-full flex items-center text-[#F0F2FF] font-bold px-6 lg:px-14">
-                <div className="lg:max-w-[800px] pt-36 lg:pt-16 pb-24 lg:pb-0 flex flex-col gap-3">
+                {/* <div className="lg:max-w-[800px] pt-36 lg:pt-16 pb-24 lg:pb-0 flex flex-col gap-3">
                     <p className="text-2xl font-black z-50 xl:text-[64px] uppercase lg:text-[45px] leading-[120%]">
                         Run Better Events With Less Effort
                     </p>
@@ -61,9 +79,60 @@ export default function HeroSection() {
                         for event organisers. Designed for growth.
                     </p>
                     <div className=" pt-20 z-50 ">
-                        <CustomButton >Create Your Event</CustomButton>
+                        <CustomButton>Create Your Event</CustomButton>
                     </div>
-                </div>
+                </div> */}
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="show"
+                    className="lg:max-w-[800px] pt-36 lg:pt-16 pb-24 lg:pb-0 flex flex-col gap-3"
+                >
+                    {/* Heading */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                        className="text-2xl font-black z-50 xl:text-[64px] uppercase lg:text-[45px] leading-[120%]"
+                    >
+                        Run Better Events With Less Effort
+                    </motion.p>
+
+                    {/* Underline */}
+                    <motion.div
+                        initial={{ scaleX: 0, opacity: 0, y: 20 }}
+                        animate={{ scaleX: 1, opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                        className="origin-left"
+                    > 
+                        <UnderLineIcon />
+                    </motion.div>
+
+                    {/* Description */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
+                        className="xl:text-2xl mt-3 z-50"
+                    >
+                        Create event pages, boost ticket sales, manage
+                        attendees, and keep your audience connected before and
+                        after every event. All from one simple platform. Built
+                        for event organisers. Designed for growth.
+                    </motion.p>
+
+                    {/* Button */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.7, ease: [0.4, 0, 0.2, 1] }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.97 }}
+                        className="pt-20 z-50"
+                    >
+                        <CustomButton>Create Your Event</CustomButton>
+                    </motion.div>
+                </motion.div>
 
                 <img
                     alt="bluestroke"
