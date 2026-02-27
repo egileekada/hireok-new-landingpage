@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       siteName: "Hiroek",
       images: [
         {
-          url: "https://res.cloudinary.com/dwotkchmt/image/upload/c_scale,h_630,w_1200/v1749194765/Slide_16_9_-_6_1_ktdfrx.jpg", // full URL recommended
+          url: "/title.jpg", // full URL recommended
           width: 1200,
           height: 630,
           alt: "Hiroek Event Platform",
