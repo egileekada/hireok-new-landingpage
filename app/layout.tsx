@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       title: "Hiroek: Create, Manage & Grow Your Events in One Place",
       description:
         "Plan events, sell tickets, manage attendees, and send updates easily.",
-      images: ["https://res.cloudinary.com/dwotkchmt/image/upload/c_scale,h_630,w_1200/v1749194765/Slide_16_9_-_6_1_ktdfrx.jpg"],
+      images: ["/title.jpg"],
     },
   };
 
