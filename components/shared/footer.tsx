@@ -8,9 +8,9 @@ import { navlinkmobile } from "../constant";
 
 export default function Footer() {
     return (
-        <footer className="w-full relative flex flex-col overflow-hidden "> 
+        <footer className="w-full relative flex flex-col overflow-hidden border-t border-[#2E4E73] "> 
 
-            <div className="relative z-10 w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF]">
+            <div className="relative z-20 w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF]">
                 <div className="w-full px-6 lg:px-12 gap-6 flex lg:flex-row flex-col py-20 justify-between">
                     {/* Logo Section */}
                     <div className="lg:max-w-[370px] flex flex-col items-start gap-3">
@@ -90,6 +90,57 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
+
+            <div className=" absolute w-full z-10 h-full flex inset-0 ">
+                    <div className=" w-[25%] h-full flex flex-col ">
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                    </div>
+                    <div className=" w-[25%] h-full flex flex-col ">
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                    </div>
+                    <div className=" w-[25%] h-full flex flex-col ">
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                    </div>
+                    <div className=" w-[25%] h-full flex flex-col ">
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                        <img
+                            alt="bluestroke"
+                            src="/images/bluestroke.png"
+                            className=" object-cover opacity-4 w-full h-[50%] "
+                        />
+                    </div>
+                </div>
         </footer>
     );
 }
