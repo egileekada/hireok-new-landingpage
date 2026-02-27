@@ -5,7 +5,7 @@ import { Headsection } from "@/components/shared";
 export default function Support() {
     return (
         <div className=" w-full flex flex-col bg-foreground ">
-            <Headsection title="SUPPORT" img="/images/aboutbg.png" />
+            <Headsection title="Help When you need it most" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
                 <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3  ">

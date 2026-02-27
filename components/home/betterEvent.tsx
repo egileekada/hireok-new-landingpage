@@ -1,8 +1,9 @@
+import { CustomButton } from "../custom";
 import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function BetterEvent() {
     return (
-        <LandingLayout reverse={true} img="/hero/six.png" >
+        <LandingLayout reverse={true} >
             <div className=" flex flex-col gap-3 ">
                 <Headertext>Ready to Host Better Events?</Headertext>
             </div>
@@ -16,14 +17,9 @@ export default function BetterEvent() {
                     <p>Start with Hiroek today.</p>
                 </div>
             </div>
-            {/* <div className=" pt-10 ">
-                <GetInTouch
-                    tab={2}
-                    label="Create Your Event"
-                    whitebg={true}
-                    activatebtn={true}
-                />
-            </div> */}
+            <div className=" pt-10 ">
+                <CustomButton variant="outline">Create Your Event</CustomButton>
+            </div>
         </LandingLayout>
     );
 }

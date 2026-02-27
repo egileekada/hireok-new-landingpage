@@ -49,27 +49,25 @@ export default function LandingLayout({
                     </div>
                 ))}
             </div>
-
-            {/* Image Side */}
-            <div className="w-full flex justify-center items-center z-20">
-                <motion.div
-                    initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="w-full lg:w-[70%]"
-                >
-                    <div className="h-[500px] p-4 bg-gray-400 rounded-3xl shadow-xl">
-                        {img && (
+            {img && (
+                <div className={`${ !img ? "w-fit" : " w-full " } flex justify-center items-center z-20 `}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="w-full lg:w-[70%]"
+                    >
+                        <div className="h-[500px] p-4 rounded-3xl">
                             <CustomImage
                                 src={img}
                                 alt="section image"
                                 contain
                             />
-                        )}
-                    </div>
-                </motion.div>
-            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            )}
 
             {/* Content Side */}
             <div className="w-full flex justify-center items-center z-20">

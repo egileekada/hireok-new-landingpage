@@ -1,8 +1,9 @@
+import { CustomButton } from "../custom";
 import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function CoreIdea() {
     return (
-        <LandingLayout reverse={true} img="/hero/three.png"  >
+        <LandingLayout reverse={true} img="/hero/three.png">
             <div className=" flex flex-col gap-3 ">
                 <Headertext>Need extra marketing support?</Headertext>
             </div>
@@ -12,14 +13,9 @@ export default function CoreIdea() {
                     and audience growth support.
                 </p>
             </div>
-            {/* <div className=" pt-10 ">
-                        <GetInTouch
-                            tab={2} 
-                            label="Learn More" 
-                            whitebg={true}
-                            activatebtn={true}
-                        />
-                    </div> */}
+            <div className=" pt-10 ">
+                <CustomButton variant="outline">Learn More</CustomButton>
+            </div>
         </LandingLayout>
     );
 }

@@ -35,12 +35,8 @@ export const navlink = [
 
 export const navlinkmobile = [
     {
-        name: "Why Hiroek",
-        link: "/whyhiroek"
-    },
-    {
-        name: "Faq",
-        link: "/faq"
+        name: "Home",
+        link: "/"
     },
     {
         name: "Features",
@@ -51,9 +47,21 @@ export const navlinkmobile = [
         link: "/fees"
     },
     {
-        name: "Event Partners",
+        name: "Partners",
         link: "/partners"
-    }
+    },
+    {
+        name: "Blog",
+        link: "/blog"
+    },
+    {
+        name: "Support",
+        link: "/support"
+    },
+    {
+        name: "Faq",
+        link: "/faq"
+    },
 ] 
 
 export const eventData = [
