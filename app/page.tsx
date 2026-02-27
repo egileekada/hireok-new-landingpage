@@ -2,7 +2,7 @@ import { BetterEvent, Clearpricing, Coreidea, Features, HeroSection, Marketingsu
 
 export default function Home() {
     return (
-        <div>
+        <div className=" w-full flex-col flex " >
             <HeroSection />
             <Organisers />
             <Features />

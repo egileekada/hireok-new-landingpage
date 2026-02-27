@@ -64,7 +64,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/25 z-10 rounded-b-3xl lg:rounded-b-[120px]" />
 
             {/* Content */}
-            <div className="relative  w-screen lg:h-screen h-full flex items-center text-[#F0F2FF] font-bold px-6 lg:px-14">
+            <div className="relative  w-screen h-screen flex items-center text-[#F0F2FF] font-bold px-6 lg:px-14">
                 {/* <div className="lg:max-w-[800px] pt-36 lg:pt-16 pb-24 lg:pb-0 flex flex-col gap-3">
                     <p className="text-2xl font-black z-50 xl:text-[64px] uppercase lg:text-[45px] leading-[120%]">
                         Run Better Events With Less Effort
