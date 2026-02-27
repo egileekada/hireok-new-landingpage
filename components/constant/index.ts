@@ -3,26 +3,26 @@ export const navlink = [
         name: "About Us",
         link: "/about-us"
     },
-    {
-        name: "Faq",
-        link: "/faq"
-    },
+    // {
+    //     name: "Faq",
+    //     link: "/faq"
+    // },
     {
         name: "Fees",
         link: "/fees"
     },
-    {
-        name: "Features",
-        link: "/features"
-    },
+    // {
+    //     name: "Features",
+    //     link: "/features"
+    // },
     {
         name: "Mobile",
         link: "/mobile"
     },
-    {
-        name: "Partners",
-        link: "/partners"
-    },
+    // {
+    //     name: "Partners",
+    //     link: "/partners"
+    // },
     {
         name: "Support",
         link: "/support"
@@ -36,15 +36,15 @@ export const navlink = [
 export const navlinkmobile = [
     {
         name: "Why Hiroek",
-        link: "/about-us"
+        link: "/whyhiroek"
     },
     {
-        name: "Mission",
-        link: "/mission"
+        name: "Faq",
+        link: "/faq"
     },
     {
-        name: "For Charities",
-        link: "/charities"
+        name: "Features",
+        link: "/features"
     },
     {
         name: "Fees",

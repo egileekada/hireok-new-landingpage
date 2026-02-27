@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Whoitsfor() {
     return (
-        <LandingLayout>
+        <LandingLayout img="/hero/two.jpeg"  >
             <Headertext>
                 WHO IT'S FOR
             </Headertext>

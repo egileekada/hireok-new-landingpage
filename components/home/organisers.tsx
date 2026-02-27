@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Organisers() {
     return (
-        <LandingLayout first >
+        <LandingLayout first img="/hero/four.png" >
             <Headertext>
                 Most organisers start from zero every time.
             </Headertext>

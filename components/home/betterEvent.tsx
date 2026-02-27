@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function BetterEvent() {
     return (
-        <LandingLayout reverse={true}>
+        <LandingLayout reverse={true} img="/hero/six.png" >
             <div className=" flex flex-col gap-3 ">
                 <Headertext>Ready to Host Better Events?</Headertext>
             </div>

@@ -52,12 +52,12 @@ export default function Footer() {
                         </div>
 
                         {/* Navigation Links */}
-                        <div className="grid grid-cols-2 gap-5">
+                        <div className="grid grid-cols-2 gap-3">
                             {navlinkmobile.map((item) => (
                                 <Link
                                     key={item.link}
                                     href={item.link}
-                                    className="font-medium lg:text-lg hover:opacity-80 transition"
+                                    className="font-medium hover:opacity-80 transition"
                                 >
                                     {item.name}
                                 </Link>

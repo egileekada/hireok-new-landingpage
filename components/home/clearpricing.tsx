@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Clearpricing() {
     return (
-        <LandingLayout>
+        <LandingLayout img="/hero/seven.png" >
             <Headertext>
                 CLEAR PRICING PROMISE
             </Headertext>

@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function PlatformTicket() {
     return (
-        <LandingLayout>
+        <LandingLayout img="/hero/eight.png" >
             <Headertext>
                 Most event platforms stop at ticket sales.
             </Headertext>
