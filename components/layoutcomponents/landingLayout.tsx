@@ -58,7 +58,7 @@ export default function LandingLayout({
                         transition={{ duration: 0.8 }}
                         className="w-full lg:w-full"
                     >
-                        <div className="h-[500px] p-4 rounded-3xl">
+                        <div className="lg:h-[500px] w-full h-[300px] lg:p-4 rounded-3xl">
                             <CustomImage
                                 src={img}
                                 alt="section image"
