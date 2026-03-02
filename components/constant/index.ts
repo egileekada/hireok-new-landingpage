@@ -43,6 +43,10 @@ export const navlinkmobile = [
         link: "/features"
     },
     {
+        name: "How It Works",
+        link: "/howitworks"
+    },
+    {
         name: "Fees",
         link: "/fees"
     },

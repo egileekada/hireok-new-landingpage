@@ -13,11 +13,11 @@ export default function CoreIdea() {
                 <p className=" text-[30px] lg:leading-[100%] font-black ">
                     Start in minutes
                 </p>
-                <div className=" flex flex-col gap-2 axiforma-medium lg:text-bold ">
-                    <p>Step 1: Create your event</p>
-                    <p>Step 2: Share your event page</p>
-                    <p>Step 3: Sell tickets or collect RSVPs</p>
-                    <p>Step 4: Send updates and engage attendees</p>
+                <div className=" flex flex-col gap-2 lg:text-bold ">
+                    <p className=" font-black ">Step 1: <span className=" axiforma-medium font-bold ">Create your event</span></p>
+                    <p className=" font-black ">Step 2: <span className=" axiforma-medium font-bold ">Share your event page</span></p>
+                    <p className=" font-black ">Step 3: <span className=" axiforma-medium font-bold ">Sell tickets or collect RSVPs</span></p>
+                    <p className=" font-black ">Step 4: <span className=" axiforma-medium font-bold ">Send updates and engage attendees</span></p>
                 </div>
             </div>
             <p className=" lg:text-base text-sm font-black mt-4 ">
