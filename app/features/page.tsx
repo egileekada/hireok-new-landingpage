@@ -4,11 +4,11 @@ import { Headsection } from "@/components/shared";
 export default function Features() {
     return (
         <div className=" w-full flex flex-col bg-white ">
-            <Headsection title="FEATURES" img="/images/aboutbg.png" />
+            <Headsection title="Create Event Pages in Minutes" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
                 <div className=" w-full max-w-[800px] flex flex-col gap-3">
-                    <Headertext>Create Event Pages in Minutes</Headertext>
+                    {/* <Headertext>Create Event Pages in Minutes</Headertext> */}
 
                     <p className=" font-medium text-lg  ">
                         Launch your event quickly with easy-to-use tools.

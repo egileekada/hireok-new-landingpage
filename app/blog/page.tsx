@@ -7,7 +7,7 @@ export default function Blogs() {
             <Headsection title="BLOG / RESOURCES" img="/images/aboutbg.png" />
             <div className="max-w-3xl mx-auto py-20 ">
                 {/* Header */}
-                <div className="mb-16 text-center"> 
+                <div className="mb-16 "> 
                     <h1 className="mt-4 text-4xl md:text-5xl font-bold text-[#161925] leading-tight">
                         Welcome to our resource hub for event organisers and
                         planners.

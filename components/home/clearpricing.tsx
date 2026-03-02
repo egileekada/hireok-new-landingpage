@@ -1,9 +1,13 @@
+"use client";
+import { useRouter } from "next/navigation";
 import { CustomButton } from "../custom";
 import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Clearpricing() {
+    const router = useRouter();
+
     return (
-        <LandingLayout >
+        <LandingLayout>
             <Headertext>CLEAR PRICING PROMISE</Headertext>
             <div className=" flex flex-col gap-2 mt-4 axiforma-medium text-[#424242] ">
                 <p>Start Free.</p>
@@ -12,7 +16,9 @@ export default function Clearpricing() {
                 <p>Just simple pricing for organisers.</p>
             </div>
             <div className=" pt-20 ">
-                <CustomButton>View Fee</CustomButton>
+                <CustomButton onClick={() => router.push("/fees")}>
+                    View Fee
+                </CustomButton>
             </div>
         </LandingLayout>
     );

@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Features() {
     return (
-        <LandingLayout reverse={true} img="/hero/five.png" >
+        <LandingLayout reverse={true} img="/hero/one.jpeg" >
                 <div className=" flex flex-col gap-2 ">
                     <Headertext>
                         Everything you need to run and grow your events.
@@ -11,10 +11,10 @@ export default function Features() {
                         Simple, fast, and built for organisers.
                     </p>
                 </div>
-                <p className=" text-[30px] mt-3 font-black capitalize ">
+                {/* <p className=" text-[30px] mt-3 font-black capitalize ">
                     4 Feature Blocks
-                </p>
-                <div className=" flex flex-col gap-2 ">
+                </p> */}
+                <div className=" flex flex-col mt-3 gap-2 ">
                     <p className=" text-[20px] font-black capitalize ">
                         Create Event Pages
                     </p>

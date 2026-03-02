@@ -5,11 +5,11 @@ import { Headsection } from "@/components/shared";
 export default function Fee() {
     return (
         <div className=" w-full flex flex-col bg-white ">
-            <Headsection title="FEE" img="/images/aboutbg.png" />
+            <Headsection title="Simple Plans for Organisers" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
                 <div className=" w-full max-w-[800px] flex flex-col gap-3 ">
-                    <HeaderText>Simple Plans for Organisers</HeaderText>
+                    {/* <HeaderText>Simple Plans for Organisers</HeaderText> */}
 
                     <p className=" font-bold text-xl  ">
                         Hiroek is Free to Use!
@@ -87,13 +87,7 @@ export default function Fee() {
                         attendee interaction.
                     </p>
                 </div>
-                <div className=" w-full max-w-[800px] flex flex-col gap-3 ">
-                    <HeaderText>Multi-Currency Support</HeaderText>
-
-                    <p className=" font-medium text-lg  ">
-                        We support multiple currencies, and fees may vary
-                        slightly depending on the currency you choose.
-                    </p>
+                <div className=" w-full max-w-[800px] flex flex-col gap-3 "> 
                     <p className=" font-medium text-lg  ">
                         Try it now and upgrade the way you sell tickets.
                     </p>

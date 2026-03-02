@@ -9,10 +9,7 @@ export default function Mobile() {
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
                 <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3 "> 
-
-                    <p className=" font-medium text-lg  ">
-                        Stay connected wherever you go.
-                    </p>
+ 
                     <p className=" font-medium text-lg  ">
                         With the Hiroek app, attendees can:
                     </p>

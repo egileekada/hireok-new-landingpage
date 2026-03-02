@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { UnderLineIcon } from "../svg";
 import { useEffect, useState } from "react";
 import { CustomButton } from "../custom";
+import { useRouter } from "next/navigation";
 
 const containerVariants = {
     hidden: {},
@@ -25,7 +26,7 @@ const fadeUp = {
 
 export default function HeroSection() {
     const [isShown, setIsShown] = useState(0);
-
+    const router = useRouter();
     const data = [
         "/images/home/bg1.jpg",
         "/images/home/bg2.jpg",
@@ -130,7 +131,7 @@ export default function HeroSection() {
                         whileTap={{ scale: 0.97 }}
                         className="pt-20 z-50"
                     >
-                        <CustomButton>Create Your Event</CustomButton>
+                        <CustomButton onClick={() => router.push("https://partners.hiroek.io/")}>Create Your Event</CustomButton>
                     </motion.div>
                 </motion.div>
 

@@ -1,7 +1,10 @@
+"use client";
+import { useRouter } from "next/navigation";
 import { CustomButton } from "../custom";
 import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function CoreIdea() {
+    const router = useRouter();
     return (
         <LandingLayout reverse={true} img="/hero/three.png">
             <div className=" flex flex-col gap-3 ">
@@ -14,7 +17,7 @@ export default function CoreIdea() {
                 </p>
             </div>
             <div className=" pt-10 ">
-                <CustomButton variant="outline">Learn More</CustomButton>
+                <CustomButton onClick={() => router.push("/partners")} variant="outline">Learn More</CustomButton>
             </div>
         </LandingLayout>
     );

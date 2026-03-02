@@ -1,7 +1,10 @@
+"use client";
+import { useRouter } from "next/navigation";
 import { CustomButton } from "../custom";
 import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Whoitsfor() {
+    const router = useRouter();
     return (
         <LandingLayout img="/hero/two.jpeg">
             <Headertext>WHO IT'S FOR</Headertext>
@@ -28,7 +31,7 @@ export default function Whoitsfor() {
                 </p>
             </div>
             <div className=" pt-10 ">
-                <CustomButton>Create Your Event</CustomButton>
+                <CustomButton onClick={() => router.push("https://partners.hiroek.io/")} >Create Your Event</CustomButton>
             </div>
         </LandingLayout>
     );

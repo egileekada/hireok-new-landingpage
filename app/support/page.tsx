@@ -8,8 +8,7 @@ export default function Support() {
             <Headsection title="Help When you need it most" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
-                <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3  ">
-                    <Headertext>Help When You Need It</Headertext> 
+                <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3  "> 
 
                     <p className=" font-medium text-lg  ">
                         We support organisers at every step:

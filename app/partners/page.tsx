@@ -5,13 +5,13 @@ import { Headsection } from "@/components/shared";
 export default function Partner() {
     return (
         <div className=" w-full flex flex-col bg-white ">
-            <Headsection title="PARTNERSHIP" img="/images/aboutbg.png" />
+            <Headsection title="Build demand. Increase visibility. Sell more tickets." img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
                 <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3 ">
-                    <Headertext>
+                    {/* <Headertext>
                         Build demand. Increase visibility. Sell more tickets.
-                    </Headertext>
+                    </Headertext> */}
 
                     <p className=" font-medium text-lg  ">
                         Through our partnership with The Strategist & Co., an

@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { Headsection } from "@/components/shared";
-
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import clsx from "clsx";
@@ -23,7 +22,7 @@ export default function FAQ() {
                             Hiroek is a simple, all-in-one platform for event
                             organisers. It helps you create event pages, sell
                             tickets, manage attendees, and communicate with your
-                            audience — all from one place.
+                            audience; all from one place.
                         </>
                     ),
                 },
@@ -31,10 +30,19 @@ export default function FAQ() {
                     question: "Who is Hiroek for?",
                     answer: (
                         <>
-                            Hiroek is built for event organisers, community
-                            leaders, creators, small businesses, workshop hosts,
-                            schools and organisations. If you plan and manage
-                            events, Hiroek is designed for you.
+                            Hiroek is built for:
+                            <ul className="list-disc ml-6 mt-3 space-y-1">
+                                <li>Event organisers</li>
+                                <li>Community leaders</li>
+                                <li>Creators hosting events</li>
+                                <li>Small businesses</li>
+                                <li>Workshop hosts</li>
+                                <li>Schools and organisations</li>
+                            </ul>
+                            <p className="mt-3">
+                                If you plan and manage events, Hiroek is
+                                designed for you.
+                            </p>
                         </>
                     ),
                 },
@@ -42,10 +50,20 @@ export default function FAQ() {
                     question: "What type of events can I host on Hiroek?",
                     answer: (
                         <>
-                            You can host in-person events, online events,
-                            workshops, networking mixers, conferences, seminars
-                            and community gatherings. Any event that requires
-                            registrations or ticket sales can be managed.
+                            You can host:
+                            <ul className="list-disc ml-6 mt-3 space-y-1">
+                                <li>In-person events</li>
+                                <li>Online events</li>
+                                <li>Workshops</li>
+                                <li>Networking mixers</li>
+                                <li>Conferences</li>
+                                <li>Seminars</li>
+                                <li>Community gatherings</li>
+                            </ul>
+                            <p className="mt-3">
+                                Any event that requires registrations or ticket
+                                sales can be managed on Hiroek.
+                            </p>
                         </>
                     ),
                 },
@@ -53,8 +71,9 @@ export default function FAQ() {
                     question: "Do I need technical skills to use Hiroek?",
                     answer: (
                         <>
-                            No. Hiroek is simple and easy to use. You can
-                            publish an event in minutes.
+                            No. Hiroek is designed to be simple and easy to use.
+                            You can create and publish an event in just a few
+                            minutes.
                         </>
                     ),
                 },
@@ -67,23 +86,42 @@ export default function FAQ() {
                     question: "How do I create an event?",
                     answer: (
                         <>
-                            Sign in to your dashboard → Click “Create Event” →
-                            Add details → Set tickets → Publish. Your page is
-                            instantly ready to share.
+                            Creating an event is easy:
+                            <ul className="list-disc ml-6 mt-3 space-y-1">
+                                <li>Sign in to your dashboard</li>
+                                <li>Click “Create Event”</li>
+                                <li>Add your event details</li>
+                                <li>Set up tickets or RSVPs</li>
+                                <li>Publish your event</li>
+                            </ul>
+                            <p className="mt-3">
+                                Your event page will be ready to share
+                                immediately.
+                            </p>
                         </>
                     ),
                 },
                 {
                     question: "Can I host both online and in-person events?",
-                    answer: <>Yes. You can choose the format during setup.</>,
+                    answer: (
+                        <>
+                            Yes. Hiroek supports both online and in-person
+                            events.
+                        </>
+                    ),
                 },
                 {
                     question: "Can I customise my event page?",
                     answer: (
                         <>
-                            Yes. Add event name, description, date, location,
-                            images, ticket options and more to create a
-                            professional page.
+                            Yes. You can add:
+                            <ul className="list-disc ml-6 mt-3 space-y-1">
+                                <li>Event name and description</li>
+                                <li>Date and time</li>
+                                <li>Location or online link</li>
+                                <li>Images and event details</li>
+                                <li>Ticket options</li>
+                            </ul>
                         </>
                     ),
                 },
@@ -111,8 +149,8 @@ export default function FAQ() {
                     question: "How do I receive my money?",
                     answer: (
                         <>
-                            Hiroek supports instant withdrawals once ticket
-                            sales come in.
+                            Hiroek supports instant cash withdrawals as soon as
+                            ticket sales come in.
                         </>
                     ),
                 },
@@ -120,8 +158,8 @@ export default function FAQ() {
                     question: "Are payments secure?",
                     answer: (
                         <>
-                            Yes. All payments are processed through trusted,
-                            secure systems.
+                            Yes. All payments are processed through secure,
+                            trusted systems.
                         </>
                     ),
                 },
@@ -131,11 +169,11 @@ export default function FAQ() {
             title: "Attendee Management",
             items: [
                 {
-                    question: "Can I see who has registered?",
+                    question: "Can I see who has registered for my event?",
                     answer: (
                         <>
-                            Yes. You can view registrations, track sales and see
-                            attendee details.
+                            Yes. You can view registrations, track ticket sales
+                            and see attendee details.
                         </>
                     ),
                 },
@@ -154,11 +192,11 @@ export default function FAQ() {
             title: "Communication",
             items: [
                 {
-                    question: "Can I send updates to attendees?",
+                    question: "Can I send updates to my attendees?",
                     answer: (
                         <>
-                            Yes. Send announcements, reminders and updates
-                            directly.
+                            Yes. Send announcements, reminders and important
+                            updates directly from your dashboard.
                         </>
                     ),
                 },
@@ -166,8 +204,8 @@ export default function FAQ() {
                     question: "Are notifications automated?",
                     answer: (
                         <>
-                            Yes. Registration confirmations and reminders are
-                            sent automatically.
+                            Yes. Registration confirmations, reminders and
+                            important updates are sent automatically.
                         </>
                     ),
                 },
@@ -178,21 +216,29 @@ export default function FAQ() {
             items: [
                 {
                     question: "Is Hiroek free to use?",
-                    answer: <>Yes. Hiroek offers a free plan to get started.</>,
+                    answer: (
+                        <>
+                            Yes. Hiroek offers a free plan to get started with
+                            event creation.
+                        </>
+                    ),
                 },
                 {
                     question: "Do you have paid plans?",
                     answer: (
                         <>
-                            Yes. Paid plans unlock advanced engagement and
-                            marketing tools.
+                            Yes. Paid plans unlock additional engagement and
+                            marketing features to boost ticket sales.
                         </>
                     ),
                 },
                 {
                     question: "Are there hidden fees?",
                     answer: (
-                        <>No. Pricing is transparent with no hidden charges.</>
+                        <>
+                            No. Hiroek pricing is transparent with no hidden
+                            charges.
+                        </>
                     ),
                 },
             ],
@@ -205,7 +251,7 @@ export default function FAQ() {
                     answer: (
                         <>
                             Visit our Help Center, contact support at
-                            info@hiroek.io, or book a demo. We're here to help.
+                            info@hiroek.io, or book a demo.
                         </>
                     ),
                 },
@@ -222,8 +268,8 @@ export default function FAQ() {
                     question: "Can I try Hiroek before paying?",
                     answer: (
                         <>
-                            Yes. Start free and upgrade when you need more
-                            features.
+                            Yes. Start free and upgrade anytime as your needs
+                            grow.
                         </>
                     ),
                 },
@@ -233,13 +279,14 @@ export default function FAQ() {
                         <>
                             Simple event creation. Easy ticket sales. Clear
                             attendee management. Direct communication. Instant
-                            payouts. Everything in one platform.
+                            payouts. Everything you need in one platform.
                         </>
                     ),
                 },
             ],
         },
     ];
+
     const [openIndex, setOpenIndex] = useState<string | null>(null);
 
     const toggle = (id: string) => {
@@ -247,26 +294,30 @@ export default function FAQ() {
     };
 
     return (
-        <section className=" w-full flex flex-col bg-white ">
-            <Headsection title="FAQ" img="/images/aboutbg.png" />
-            <div className="max-w-4xl mx-auto py-20 px-4 ">
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <h1 className=" text-3xl lg:text-4xl font-bold text-[#161925]">
-                        Frequently Asked Questions
-                    </h1>
-                    <p className="mt-4 text-[#5B5B6B] text-lg">
-                        Everything you need to know about using Hiroek.
+        <section className="w-full bg-gradient-to-b from-white to-[#F8F6FF]">
+            <Headsection
+                title="Frequently Asked Questions"
+                img="/images/aboutbg.png"
+            />
+
+            <div className="max-w-4xl mx-auto py-24 px-6">
+                <div className="text-center mb-20">
+                    <h2 className="text-3xl font-bold text-[#161925]">
+                        Everything you need to know about using Hiroek
+                    </h2>
+                    <p className="mt-4 text-[#6B6B7B]">
+                        Clear answers to help you create, manage and grow
+                        successful events.
                     </p>
                 </div>
 
                 {faqData.map((section, sectionIndex) => (
-                    <div key={sectionIndex} className="mb-12">
-                        <h2 className=" text-xl font-semibold text-[#9747FF] mb-6">
+                    <div key={sectionIndex} className="mb-16">
+                        <h3 className="text-lg font-semibold mb-6 bg-gradient-to-r from-[#9747FF] to-[#6C2CFF] bg-clip-text text-transparent">
                             {section.title}
-                        </h2>
+                        </h3>
 
-                        <div className="space-y-4">
+                        <div className="space-y-5">
                             {section.items.map((item, index) => {
                                 const id = `${sectionIndex}-${index}`;
                                 const isOpen = openIndex === id;
@@ -274,36 +325,38 @@ export default function FAQ() {
                                 return (
                                     <div
                                         key={id}
-                                        className="bg-white rounded-xl border border-[#E8E7ED] overflow-hidden"
+                                        className="bg-white rounded-2xl border border-[#ECEAF5] shadow-sm hover:shadow-md transition-all duration-300"
                                     >
                                         <button
                                             onClick={() => toggle(id)}
-                                            className="w-full flex justify-between items-center px-6 py-5 text-left"
+                                            className="w-full flex justify-between items-center px-7 py-6 text-left"
                                         >
-                                            <span className="font-medium text-[#161925]">
+                                            <span className="font-medium text-[#1C1C28]">
                                                 {item.question}
                                             </span>
+
                                             <ChevronDown
+                                                size={20}
                                                 className={clsx(
                                                     "transition-transform duration-300",
-                                                    isOpen &&
-                                                        "rotate-180 text-[#9747FF]",
+                                                    isOpen
+                                                        ? "rotate-180 text-[#9747FF]"
+                                                        : "text-[#8E8EA0]",
                                                 )}
-                                                size={20}
                                             />
                                         </button>
 
                                         <div
                                             className={clsx(
-                                                "px-6 overflow-hidden transition-all duration-300",
+                                                "px-7 overflow-hidden transition-all duration-300 ease-in-out",
                                                 isOpen
-                                                    ? "max-h-96 pb-6"
+                                                    ? "max-h-[600px] pb-7"
                                                     : "max-h-0",
                                             )}
                                         >
-                                            <p className="text-[#5B5B6B] leading-relaxed">
+                                            <div className="text-[#5B5B6B] leading-relaxed">
                                                 {item.answer}
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 );
@@ -312,16 +365,15 @@ export default function FAQ() {
                     </div>
                 ))}
 
-                {/* Bottom CTA */}
-                <div className="mt-20 text-center border-t pt-12">
-                    <h3 className="text-2xl font-semibold text-[#161925]">
+                <div className="mt-24 text-center bg-white rounded-3xl p-12 border border-[#ECEAF5] shadow-sm">
+                    <h4 className="text-2xl font-semibold text-background">
                         Still have questions?
-                    </h3>
-                    <p className="mt-4 text-[#5B5B6B]">
-                        Contact us at{" "}
-                        <span className="text-[#9747FF] font-medium">
-                            info@hiroek.io
-                        </span>
+                    </h4>
+                    <p className="mt-4 text-[#6B6B7B]">
+                        We're here to help. Reach out anytime.
+                    </p>
+                    <p className="mt-3 font-medium text-[#9747FF]">
+                        info@hiroek.io
                     </p>
                 </div>
             </div>

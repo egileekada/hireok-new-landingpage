@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function CoreIdea() {
     return (
-        <LandingLayout reverse={true} img="/hero/one.jpeg">
+        <LandingLayout reverse={true} >
             <div className=" flex flex-col gap-3 ">
                 <Headertext>THIS IS THE CORE IDEA</Headertext>
             </div>
