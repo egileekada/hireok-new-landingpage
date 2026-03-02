@@ -7,7 +7,7 @@ export default function WhyHiroek() {
             <Headsection title="WHY CHOOSE HIROEK" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
-                <div className=" w-full lg:max-w-[800px] flex flex-col lg:text-center gap-3">
+                <div className=" w-full lg:max-w-[800px] flex flex-col gap-3">
                     <Headertext>
                         Simple. Practical. Built for Organisers.
                     </Headertext>

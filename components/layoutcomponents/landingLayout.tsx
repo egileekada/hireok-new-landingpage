@@ -56,7 +56,7 @@ export default function LandingLayout({
                         whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="w-full lg:w-[70%]"
+                        className="w-full lg:w-full"
                     >
                         <div className="h-[500px] p-4 rounded-3xl">
                             <CustomImage
@@ -76,7 +76,7 @@ export default function LandingLayout({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="lg:max-w-[540px] flex flex-col gap-5"
+                    className={`${img ? "lg:max-w-[600px]" : "lg:max-w-[800px]"} w-full flex flex-col gap-5`}
                 >
                     {children}
                 </motion.div>

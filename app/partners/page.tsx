@@ -1,14 +1,21 @@
+"use client";
 import { CustomButton } from "@/components/custom";
 import { Headertext } from "@/components/layoutcomponents";
 import { Headsection } from "@/components/shared";
+import { useRouter } from "next/navigation";
 
 export default function Partner() {
+    const router = useRouter();
     return (
         <div className=" w-full flex flex-col bg-foreground ">
-            <Headsection title="Build demand. Increase visibility. Sell more tickets." img="/images/aboutbg.png" />
+            <Headsection title={
+                <>
+                Build demand. Increase visibility.<br/> <span>Sell more tickets.</span>
+                </>
+            } img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
-                <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3 ">
+                <div className=" w-full max-w-[800px] flex flex-col gap-3 ">
                     {/* <Headertext>
                         Build demand. Increase visibility. Sell more tickets.
                     </Headertext> */}
@@ -42,19 +49,19 @@ export default function Partner() {
                         The Strategist & Co. A complete solution for successful
                         events.
                     </p>
-                    <div className=" w-full justify-center hidden lg:flex pt-6 gap-5 ">
-                        <CustomButton>
+                    <div className=" w-full hidden lg:flex pt-6 gap-5 ">
+                        <CustomButton onClick={() => router.push("/about-partner")} >
                             Discover More About The Partnership
                         </CustomButton>
-                        <CustomButton variant="outline">
+                        <CustomButton onClick={() => router.push("https://partners.hiroek.io/")} variant="outline">
                             Get Started
                         </CustomButton>
                     </div>
-                    <div className=" w-full justify-center flex lg:hidden flex-col pt-6 gap-5 ">
-                        <CustomButton fullWidth >
+                    <div className=" w-full flex lg:hidden flex-col pt-6 gap-5 ">
+                        <CustomButton onClick={() => router.push("/about-partner")} fullWidth >
                             Discover More About The Partnership
                         </CustomButton>
-                        <CustomButton fullWidth variant="outline">
+                        <CustomButton onClick={() => router.push("https://partners.hiroek.io/")} fullWidth variant="outline">
                             Get Started
                         </CustomButton>
                     </div>

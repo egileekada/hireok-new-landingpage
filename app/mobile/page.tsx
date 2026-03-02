@@ -8,7 +8,7 @@ export default function Mobile() {
             <Headsection title="Stay connected wherever you go" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
-                <div className=" w-full max-w-[800px] flex flex-col lg:text-center gap-3 "> 
+                <div className=" w-full max-w-[800px] flex flex-col gap-3 "> 
  
                     <p className=" font-medium text-lg  ">
                         With the Hiroek app, attendees can:
@@ -32,7 +32,7 @@ export default function Mobile() {
                         ends.
                     </p>
 
-                    <div className=" flex gap-4 lg:items-center mt-6 justify-center ">
+                    <div className=" flex gap-4 lg:items-center mt-6 ">
                         <a
                             href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek"
                             target="_blank"

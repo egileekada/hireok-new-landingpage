@@ -2,7 +2,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 
 export default function Features() {
     return (
-        <LandingLayout reverse={true} img="/hero/one.jpeg" >
+        <LandingLayout reverse={true} img="/hero/one.png" >
                 <div className=" flex flex-col gap-2 ">
                     <Headertext>
                         Everything you need to run and grow your events.

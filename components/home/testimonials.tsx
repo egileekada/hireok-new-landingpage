@@ -7,7 +7,7 @@ const testimonials = [
     {
         quote: "Simple, clean, and easy to use.",
         name: "Event Organiser",
-        img: "/images/testtwo.png",
+        img: "/images/testtwo.jpeg",
     },
     {
         quote: "Finally a platform made for organisers.",
@@ -17,7 +17,7 @@ const testimonials = [
     {
         quote: "Managing my events just got easier.",
         name: "Event Manager",
-        img: "/images/testfour.png",
+        img: "/images/testfour.jpeg",
     },
     {
         quote: "Grateful to be a partner of such an incredible venture. This platform is perfect for me as an event marketer.",

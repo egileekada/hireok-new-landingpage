@@ -6,7 +6,7 @@ import { Headertext, LandingLayout } from "../layoutcomponents";
 export default function Whoitsfor() {
     const router = useRouter();
     return (
-        <LandingLayout img="/hero/two.jpeg">
+        <LandingLayout img="/hero/two.png">
             <Headertext>WHO IT'S FOR</Headertext>
             <div className=" flex flex-col gap-2 text-[#424242] axiforma-medium ">
                 <p className=" ">Perfect for:</p>

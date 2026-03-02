@@ -1,8 +1,12 @@
+"use client";
 import { CustomButton } from "@/components/custom";
 import HeaderText from "@/components/layoutcomponents/headertext";
 import { Headsection } from "@/components/shared";
+import { useRouter } from "next/navigation";
 
 export default function Fee() {
+    const router = useRouter();
+
     return (
         <div className=" w-full flex flex-col bg-foreground ">
             <Headsection title="Simple Plans for Organisers" img="/images/aboutbg.png" />
@@ -95,7 +99,7 @@ export default function Fee() {
                         This service is available upon request and subject to
                         additional fees.
                     </p>
-                    <div className=" w-full flex justify-center py-3 ">
+                    <div className=" w-full flex py-3 ">
                         <CustomButton variant="outline">
                             Get Expert Support
                         </CustomButton>
@@ -108,8 +112,8 @@ export default function Fee() {
                         Start using one platform that does it all.
                         <br />
                     </p>
-                    <div className=" w-full flex justify-center py-3 ">
-                        <CustomButton variant="outline">
+                    <div className=" w-full flex py-3 ">
+                        <CustomButton onClick={() => router.push("https://partners.hiroek.io/")} variant="outline">
                             Create Your First Event
                         </CustomButton>
                     </div>

@@ -8,9 +8,9 @@ export default function About() {
             <Headsection title="ABOUT HIROEK" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
-                <div className=" w-full lg:max-w-[800px] flex flex-col lg:items-center gap-3 ">
+                <div className=" w-full lg:max-w-[800px] flex flex-col gap-3 ">
                     <HeaderText>Our Story</HeaderText>
-                    <p className=" font-medium text-lg lg:text-center ">
+                    <p className=" font-medium text-lg ">
                         Hiroek was shaped by real conversations with event
                         organisers.
                         <br />
@@ -28,9 +28,9 @@ export default function About() {
                         relationships.”
                     </p>
                 </div>
-                <div className=" w-full lg:max-w-[800px] flex flex-col gap-3 lg:text-center lg:items-center  ">
+                <div className=" w-full lg:max-w-[800px] flex flex-col gap-3  ">
                     <HeaderText>Our Mission</HeaderText>
-                    <p className=" font-medium text-lg lg:text-center ">
+                    <p className=" font-medium text-lg ">
                         To help event organisers run successful events and build
                         meaningful relationships with their audience using
                         simple, reliable technology.

@@ -36,7 +36,7 @@ export const navlink = [
 export const navlinkmobile = [
     {
         name: "Home",
-        link: "/"
+        link: "#home"
     },
     {
         name: "Features",
@@ -50,10 +50,10 @@ export const navlinkmobile = [
         name: "Partners",
         link: "/partners"
     },
-    {
-        name: "Blog",
-        link: "/blog"
-    },
+    // {
+    //     name: "Blog",
+    //     link: "/blog"
+    // },
     {
         name: "Support",
         link: "/support"

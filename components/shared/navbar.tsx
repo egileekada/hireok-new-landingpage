@@ -15,15 +15,20 @@ import {
     AnimatePresence,
 } from "framer-motion";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function AppNavbar() {
     const [yaxis, setYaxis] = useState(0);
     const [showLink, setShowLink] = useState(false);
-
+    const pathname = usePathname();
+    const router = useRouter();
     // console.log(scrollY);
     const { scrollY } = useScroll();
     useMotionValueEvent(scrollY, "change", (latest) => {
         setYaxis(latest);
+        if(latest > 100 && pathname.includes("#home")) {
+            router.push(pathname.replace("#home", ""));
+        }
     });
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
