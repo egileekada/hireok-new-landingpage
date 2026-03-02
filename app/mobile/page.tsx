@@ -4,7 +4,7 @@ import { AppleStore, GooglePlay } from "@/components/svg";
 
 export default function Mobile() {
     return (
-        <div className=" w-full flex flex-col bg-white ">
+        <div className=" w-full flex flex-col bg-foreground ">
             <Headsection title="Stay connected wherever you go" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">

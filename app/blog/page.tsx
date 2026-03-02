@@ -3,7 +3,7 @@ import { Headsection } from "@/components/shared";
 
 export default function Blogs() {
     return (
-        <section className=" w-full flex flex-col bg-white ">
+        <section className=" w-full flex flex-col bg-foreground ">
             <Headsection title="BLOG / RESOURCES" img="/images/aboutbg.png" />
             <div className="max-w-3xl mx-auto py-20 ">
                 {/* Header */}

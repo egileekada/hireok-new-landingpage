@@ -294,7 +294,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="w-full bg-gradient-to-b from-white to-[#F8F6FF]">
+        <section className="w-full bg-foreground ">
             <Headsection
                 title="Frequently Asked Questions"
                 img="/images/aboutbg.png"

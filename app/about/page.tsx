@@ -1,10 +1,10 @@
-import { Mission } from "@/components/about";
+
 import HeaderText from "@/components/layoutcomponents/headertext";
 import { Headsection } from "@/components/shared";
 
 export default function About() {
     return (
-        <div className=" w-full flex flex-col bg-white ">
+        <div className=" w-full flex flex-col bg-foreground ">
             <Headsection title="ABOUT HIROEK" img="/images/aboutbg.png" />
 
             <div className=" w-full flex-col flex items-center gap-10 px-4 py-10 lg:py-20 text-background  ">
