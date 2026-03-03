@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     openGraph: {
       title: "Hiroek: Create, Manage & Grow Your Events in One Place",
       description:
-        "Plan events, sell tickets, manage attendees, and send updates easily with Hiroek.",
+        "Plan events, sell tickets, manage attendees, and send updates easily with Hiroek. The simple all-in-one platform for event organisers to grow their audience.",
       url: "https://hiroek.io",
       siteName: "Hiroek",
       images: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       card: "summary_large_image",
       title: "Hiroek: Create, Manage & Grow Your Events in One Place",
       description:
-        "Plan events, sell tickets, manage attendees, and send updates easily.",
+        "Plan events, sell tickets, manage attendees, and send updates easily with Hiroek. The simple all-in-one platform for event organisers to grow their audience.",
       images: ["/title.jpg"],
     },
   };
