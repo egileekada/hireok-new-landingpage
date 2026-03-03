@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar, NavbarBrand } from "@heroui/navbar";
 import { Popover, PopoverTrigger, PopoverContent } from "@heroui/popover";
 import { RiMenu2Fill } from "react-icons/ri";
@@ -26,10 +26,16 @@ export default function AppNavbar() {
     const { scrollY } = useScroll();
     useMotionValueEvent(scrollY, "change", (latest) => {
         setYaxis(latest);
-        if(latest > 100 && pathname.includes("#home")) {
-            router.push(pathname.replace("#home", ""));
-        }
     });
+
+    useEffect(()=> {
+        if(yaxis > 100 && pathname.includes("#home")) {
+            router.push(pathname.replace("#home", "/"));
+        }
+    },[yaxis])
+
+    console.log(yaxis);
+    
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

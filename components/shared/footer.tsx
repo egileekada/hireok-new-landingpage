@@ -5,11 +5,30 @@ import Link from "next/link";
 
 import { Instagram, Tiktok, Twitter, Youtube } from "../svg";
 import { navlinkmobile } from "../constant";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
-    return (
-        <footer className="w-full relative flex flex-col overflow-hidden border-t border-[#2E4E73] "> 
 
+    const router = useRouter()
+    const pathname = usePathname() 
+    
+
+    const scrollToTop = (item: string) => {
+        if(pathname === item) {
+            console.log("scrolling to top");
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+        else {
+            console.log("scrolling to top");
+            router.push(item)
+        }
+    };
+
+    return (
+        <footer className="w-full relative flex flex-col overflow-hidden border-t border-[#2E4E73] ">
             <div className="relative z-20 w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF]">
                 <div className="w-full px-6 lg:px-12 gap-6 flex lg:flex-row flex-col py-20 justify-between">
                     {/* Logo Section */}
@@ -53,15 +72,25 @@ export default function Footer() {
 
                         {/* Navigation Links */}
                         <div className="grid grid-cols-2 gap-3">
-                            {navlinkmobile.map((item) => (
-                                <Link
-                                    key={item.link}
-                                    href={item.link}
-                                    className="font-medium hover:opacity-80 transition"
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
+                            {navlinkmobile.map((item) => {
+                                if (item.name === "Home") {
+                                    return (
+                                        <p onClick={()=> scrollToTop(item.link)} className="font-medium hover:opacity-80 transition cursor-pointer ">
+                                            {item.name}
+                                        </p>
+                                    );
+                                } else {
+                                    return (
+                                        <Link
+                                            key={item.link}
+                                            href={item.link}
+                                            className="font-medium hover:opacity-80 transition"
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    );
+                                }
+                            })}
                             <a
                                 href="/pdf/TAndC.pdf"
                                 target="_blank"
@@ -76,8 +105,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                             >
                                 Privacy Policy
-                            </a> 
-                            
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -92,55 +120,55 @@ export default function Footer() {
             </div>
 
             <div className=" absolute w-full z-10 h-full flex inset-0 ">
-                    <div className=" w-[25%] h-full flex flex-col ">
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                    </div>
-                    <div className=" w-[25%] h-full flex flex-col ">
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                    </div>
-                    <div className=" w-[25%] h-full flex flex-col ">
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                    </div>
-                    <div className=" w-[25%] h-full flex flex-col ">
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                        <img
-                            alt="bluestroke"
-                            src="/images/bluestroke.png"
-                            className=" object-cover opacity-4 w-full h-[50%] "
-                        />
-                    </div>
+                <div className=" w-[25%] h-full flex flex-col ">
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
                 </div>
+                <div className=" w-[25%] h-full flex flex-col ">
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                </div>
+                <div className=" w-[25%] h-full flex flex-col ">
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                </div>
+                <div className=" w-[25%] h-full flex flex-col ">
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                    <img
+                        alt="bluestroke"
+                        src="/images/bluestroke.png"
+                        className=" object-cover opacity-4 w-full h-[50%] "
+                    />
+                </div>
+            </div>
         </footer>
     );
 }

@@ -114,7 +114,7 @@ export default function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
-                        className="xl:text-2xl mt-3 z-50"
+                        className="xl:text-2xl mt-3 z-30"
                     >
                         Create event pages, boost ticket sales, manage
                         attendees, and keep your audience connected before and
@@ -129,7 +129,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.8, delay: 0.7, ease: [0.4, 0, 0.2, 1] }}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.97 }}
-                        className="pt-20 z-50"
+                        className="pt-20 z-30"
                     >
                         <CustomButton onClick={() => router.push("https://partners.hiroek.io/")}>Create Your Event</CustomButton>
                     </motion.div>

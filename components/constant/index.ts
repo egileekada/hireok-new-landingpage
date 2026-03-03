@@ -36,7 +36,7 @@ export const navlink = [
 export const navlinkmobile = [
     {
         name: "Home",
-        link: "#home"
+        link: "/"
     },
     {
         name: "Features",
