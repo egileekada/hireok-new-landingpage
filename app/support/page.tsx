@@ -23,7 +23,7 @@ export default function Support() {
                         <br />
                         Event setup guidance
                     </p>
-                    <div className=" w-full hidden lg:flex pt-6 gap-5 ">
+                    <div className=" w-full pt-6 gap-5 ">
                         <GetInTouch /> 
                     </div> 
                 </div>

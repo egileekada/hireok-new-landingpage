@@ -18,8 +18,8 @@ export default function GetInTouch({ type }: { type?: boolean }) {
             .required("Full name is required"),
 
         organizationName: Yup.string()
-            .min(2, "Organization name must be at least 2 characters")
-            .required("Organization name is required"),
+            .matches(/^\+?[0-9]{7,15}$/, "Enter a valid phone number")
+            .required("Phone number is required"),
 
         message: Yup.string()
             .min(10, "Message must be at least 10 characters")
@@ -91,19 +91,20 @@ export default function GetInTouch({ type }: { type?: boolean }) {
                         className=" w-full flex flex-col gap-4 "
                     >
                         <CustomInput
-                            label="Email"
-                            name="email"
-                            placeholder="Email"
-                        />
-                        <CustomInput
                             label="Full Name"
                             name="fullname"
                             placeholder="Full Name"
                         />
                         <CustomInput
-                            label="Organization Name"
+                            label="Email"
+                            name="email"
+                            placeholder="Email"
+                        />
+                        <CustomInput
+                            label="Phone Number"
                             name="organizationName"
-                            placeholder="Organization Name"
+                            type="tel"
+                            placeholder="Phone Number"
                         />
                         <CustomInput
                             label="Message"
