@@ -5,8 +5,27 @@ import { useMutation } from "@tanstack/react-query";
 import { FormikProvider, useFormik } from "formik";
 import { CustomButton, CustomInput, ModalLayout } from "../custom";
 import { useState } from "react";
+import * as Yup from "yup";
 
 export default function GetInTouch() {
+    const validationSchema = Yup.object({
+        email: Yup.string()
+            .email("Enter a valid email address")
+            .required("Email is required"),
+
+        fullname: Yup.string()
+            .min(2, "Full name must be at least 2 characters")
+            .required("Full name is required"),
+
+        organizationName: Yup.string()
+            .min(2, "Organization name must be at least 2 characters")
+            .required("Organization name is required"),
+
+        message: Yup.string()
+            .min(10, "Message must be at least 10 characters")
+            .required("Message is required"),
+    });
+
     const formik = useFormik({
         initialValues: {
             email: "",
@@ -14,6 +33,7 @@ export default function GetInTouch() {
             organizationName: "",
             message: "",
         },
+        validationSchema,
         onSubmit: (values) => mutate(values),
     });
 
@@ -43,19 +63,26 @@ export default function GetInTouch() {
                 color: "success",
                 timeout: 3000,
             });
+            formik.resetForm();
+            setOpen(false);
         },
     });
 
     return (
         <div className=" lg:w-[200px] w-full flex flex-col gap-2 ">
-            <CustomButton onClick={() => setOpen(true)}>Visit Help Center</CustomButton>
+            <CustomButton onClick={() => setOpen(true)}>
+                Visit Help Center
+            </CustomButton>
             <FormikProvider value={formik}>
                 <ModalLayout
                     isOpen={open}
                     onClose={() => setOpen(false)}
                     title="Get In Touch"
                 >
-                    <form onSubmit={formik.handleSubmit}>
+                    <form
+                        onSubmit={formik.handleSubmit}
+                        className=" w-full flex flex-col gap-4 "
+                    >
                         <CustomInput
                             label="Email"
                             name="email"
@@ -77,9 +104,15 @@ export default function GetInTouch() {
                             name="message"
                             placeholder="Message"
                         />
-                        <CustomButton type="submit" isLoading={isPending}>
-                            Submit
-                        </CustomButton>
+                        <div className=" mt-4 w-full ">
+                            <CustomButton
+                                type="submit"
+                                fullWidth
+                                isLoading={isPending}
+                            >
+                                Submit
+                            </CustomButton>
+                        </div>
                     </form>
                 </ModalLayout>
             </FormikProvider>

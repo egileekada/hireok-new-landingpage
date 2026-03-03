@@ -7,7 +7,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter, 
-} from "@heroui/react";
+} from "@heroui/modal";
 
 interface CustomModalProps {
   isOpen: boolean;

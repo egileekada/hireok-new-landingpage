@@ -1,5 +1,5 @@
 "use client"
-import { Input } from "@heroui/react";
+import { Input } from "@heroui/input";
 
 interface IProps {
     placeholder?: string

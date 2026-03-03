@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Navbar, NavbarBrand } from "@heroui/react";
-import { Popover, PopoverTrigger, PopoverContent } from "@heroui/react";
+import { Navbar, NavbarBrand } from "@heroui/navbar";
+import { Popover, PopoverTrigger, PopoverContent } from "@heroui/popover";
 import { RiMenu2Fill } from "react-icons/ri";
 
 import { navlink } from "../constant";
@@ -72,8 +72,8 @@ export default function AppNavbar() {
                     </button>
                 </PopoverTrigger>
 
-                <PopoverContent className="w-[270px]">
-                    <div className="w-full max-w-[200px] bg-[#F0F2FF] backdrop-blur-xl shadow-2xl rounded-3xl p-6 flex flex-col gap-4 ">
+                <PopoverContent className="w-fit bg-[#F0F2FF] backdrop-blur-xl shadow-2xl rounded-3xl p-6 ">
+                    <div className="w-full max-w-[200px] bg-[#F0F2FF]  flex flex-col gap-4 ">
                         {navlink.map((item) => {
                             if (item.name === "About Us") {
                                 return (
