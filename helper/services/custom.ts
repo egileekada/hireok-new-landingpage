@@ -1,4 +1,4 @@
-import { addToast } from "@heroui/react";
+import { addToast } from "@heroui/toast";
 import {
   useMutation,
   UseMutationOptions,
