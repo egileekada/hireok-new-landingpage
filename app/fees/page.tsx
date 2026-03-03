@@ -1,7 +1,7 @@
 "use client";
 import { CustomButton } from "@/components/custom";
 import HeaderText from "@/components/layoutcomponents/headertext";
-import { Headsection } from "@/components/shared";
+import { GetInTouch, Headsection } from "@/components/shared";
 import { useRouter } from "next/navigation";
 
 export default function Fee() {
@@ -100,9 +100,7 @@ export default function Fee() {
                         additional fees.
                     </p>
                     <div className=" w-full flex py-3 ">
-                        <CustomButton variant="outline">
-                            Get Expert Support
-                        </CustomButton>
+                        <GetInTouch type />
                     </div>
                     <p className=" font-medium text-lg  ">
                         Ready to Run a Better Event?

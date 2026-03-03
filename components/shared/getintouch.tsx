@@ -7,7 +7,7 @@ import { CustomButton, CustomInput, ModalLayout } from "../custom";
 import { useState } from "react";
 import * as Yup from "yup";
 
-export default function GetInTouch() {
+export default function GetInTouch({ type }: { type?: boolean }) {
     const validationSchema = Yup.object({
         email: Yup.string()
             .email("Enter a valid email address")
@@ -70,9 +70,16 @@ export default function GetInTouch() {
 
     return (
         <div className=" lg:w-[200px] w-full flex flex-col gap-2 ">
-            <CustomButton onClick={() => setOpen(true)}>
-                Visit Help Center
-            </CustomButton>
+            {!type && (
+                <CustomButton onClick={() => setOpen(true)}>
+                    Visit Help Center
+                </CustomButton>
+            )}
+            {type && (
+                <CustomButton onClick={() => setOpen(true)} variant="outline">
+                    Get Expert Support
+                </CustomButton>
+            )}
             <FormikProvider value={formik}>
                 <ModalLayout
                     isOpen={open}

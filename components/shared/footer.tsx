@@ -71,7 +71,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="/pdf/PrivacyPolicy.pdf"
+                                href="/pdf/PAndP.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
