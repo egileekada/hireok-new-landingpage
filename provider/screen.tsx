@@ -8,8 +8,7 @@ export default function ScreenData ({
     children: React.ReactNode;
   }>){
     
-    const pathname = usePathname()
-
+    const pathname = usePathname() 
     return(
         <div className={` ${pathname.includes("message") ? " overflow-hidden " : " "} w-full flex flex-col flex-1  `} >
           {children}
